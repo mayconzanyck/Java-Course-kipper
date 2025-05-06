@@ -34,7 +34,7 @@ public class Main {
 
         byte b = 100;
         short s = 10000;
-        int i = 100000;
+        //int i = 100000;
         long l = 100000L;
         float f = 10.5f;
         double d = 20.5;
@@ -42,6 +42,8 @@ public class Main {
         String str = "Bianca";
         boolean bool = true;
 
+
+        System.out.println("--- CONDICIONAIS ---");
         //CONDICIONAIS
         if(str.isBlank()){ //verifica se é vazio
             System.out.println("Verdadeiro");
@@ -52,12 +54,14 @@ public class Main {
             System.out.println("Falso");
         }
 
+        System.out.println("--- VETORES ---");
         //VETORES
         int[] colecaoDeInteiros = {1, 2, 3, 4, 5}; //tem limite fixo(passando o valor para cada posição), nao e possivel fazer com que por exemplo a posição 5 receba 6, pois ali so vai ate a posição 4.
         int[] meusNumeros = new int[7]; //passando o tamanho do vetor
         System.out.println(colecaoDeInteiros[0]);
         System.out.println(meusNumeros.length);
 
+        System.out.println("--- ARRAYLISTS ---");
         //ARRAY LISTS (lista dinamica de elementos)
         ArrayList<String> nomes = new ArrayList<>();
         nomes.add("Bianca");
@@ -78,5 +82,28 @@ public class Main {
 
         //Mostrando novo nome na posição 1 após remover o antigo da posição pelo proprio nome
         System.out.println(nomes.get(1));
+
+        System.out.println("--- LOOPS ---");
+        //LOOPS
+
+        //executa enquanto tal condição nao e atingida
+        for(int i = 0; i < nomes.size(); i++){
+            System.out.println(nomes.get(i));
+        }
+
+        System.out.println();
+
+        for(String nome : nomes){  //Declara o tipo de cada item que sera atribuido na interação, e qual a variavel que sera iterada sobre(variavel que tenha uma coleçao de dados)
+            System.out.println(nome);
+        }
+
+        System.out.println();
+
+        //executa ate que a condiçao seja atingida
+        int contador = 0;
+        while(contador < 3){
+            System.out.println("Estou no while");
+            contador++; //tem que de/incrementar a variavel manualmente
+        }
     }
 }
