@@ -49,5 +49,11 @@ public class Main {
         else{
             System.out.println("Falso");
         }
+
+        //VETORES
+        int[] colecaoDeInteiros = {1, 2, 3, 4, 5}; //tem limite fixo(passando o valor para cada posição), nao e possivel fazer com que por exemplo a posição 5 receba 6, pois ali so vai ate a posição 4.
+        int[] meusNumeros = new int[7]; //passando o tamanho do vetor
+        System.out.println(colecaoDeInteiros[0]);
+        System.out.println(meusNumeros.length);
     }
 }
