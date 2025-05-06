@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -55,5 +57,26 @@ public class Main {
         int[] meusNumeros = new int[7]; //passando o tamanho do vetor
         System.out.println(colecaoDeInteiros[0]);
         System.out.println(meusNumeros.length);
+
+        //ARRAY LISTS (lista dinamica de elementos)
+        ArrayList<String> nomes = new ArrayList<>();
+        nomes.add("Bianca");
+        nomes.add("Leticia");
+        nomes.add("Henrique");
+        nomes.add("Maycon");
+        nomes.add("Joao");
+
+        //Mostrando nome na posição 1
+        System.out.println(nomes.get(1));
+
+        nomes.remove(1);
+
+        //Mostrando novo nome na posição 1 após remover o antigo da posição pela propria posição
+        System.out.println(nomes.get(1));
+
+        nomes.remove("Henrique");
+
+        //Mostrando novo nome na posição 1 após remover o antigo da posição pelo proprio nome
+        System.out.println(nomes.get(1));
     }
 }
