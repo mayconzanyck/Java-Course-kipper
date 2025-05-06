@@ -1,0 +1,19 @@
+# Diretório do IntelliJ IDEA
+.idea/
+*.iml
+
+# Compilação Java
+/out/
+*.class
+
+# Arquivos de log
+*.log
+
+# Configurações do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Outras pastas temporárias
+target/
+bin/
+build/
