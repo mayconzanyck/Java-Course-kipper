@@ -39,5 +39,15 @@ public class Main {
         char c = 'A';
         String str = "Bianca";
         boolean bool = true;
+
+        //CONDICIONAIS
+        if(str.isBlank()){ //verifica se é vazio
+            System.out.println("Verdadeiro");
+        }else if(str == "Bianca"){
+            System.out.println("Bianca");
+        }
+        else{
+            System.out.println("Falso");
+        }
     }
 }
