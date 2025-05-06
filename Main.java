@@ -105,5 +105,24 @@ public class Main {
             System.out.println("Estou no while");
             contador++; //tem que de/incrementar a variavel manualmente
         }
+
+        System.out.println("--- CASTING ---");
+        //CASTING (conversao de um dado para o outro)
+
+
+        //casting explicito
+        double resultado = 0.0;
+        int resultadoInt = (int) resultado;
+
+        //casting implicito
+        int meuInt = 10;
+        double meuDouble = meuInt;
+
+        //casting string para int
+        String meuString = "10";
+        int meuInt2 = Integer.parseInt(meuString);
+
+        //casting int para string
+        String minhaString = String.valueOf(meuInt2);
     }
 }
