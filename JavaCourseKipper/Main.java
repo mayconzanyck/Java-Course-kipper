@@ -1,3 +1,6 @@
+//PACOTES: organizar em namespaces distintos para evitar conflitos; tem hierarquia de diretorios
+package JavaCourseKipper;
+
 //CLASSES: POO, modelo que devine a estrutura do objeto
 
 public class Main {
@@ -31,3 +34,11 @@ class Carro{
         System.out.println("Acelerando o carro " + this.modelo);
     }
 }
+
+//MODIFICADORES DE ACESSO: controla a visibilidade das classes e metodos
+/*
+Public: O metodo ou classe é acessivel de qualquer lugar/pacote
+Default(Quando nao e definido modificador): Todo mundo que tiver no mesmo pacote da classe, consegue ver ela, mas outras nao conseguem acessar ela de fora
+Private: Só vao estar visiveis na classe que foi declarado
+Protected: Vai ser visivel dentro do mesmo arquivo, porem nao vai ser visivel para fora (dentro do mesmo pacote)
+*/
