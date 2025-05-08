@@ -18,6 +18,21 @@ public class Main {
         SerVivo meuSer = new Humano();
         meuSer.respirar();
 
+        //EXEÇÕES
+        //NullPointerException
+        //ArrayIndexOfBoundsException
+        //RuntimeExcpetion
+        //IOException
+        //ArithmeticException
+
+        Carro meuErroFurado = null;
+
+        try{
+            meuErroFurado.acelerar();
+        } catch (NullPointerException exception){
+            System.out.println("Vende carro curado");
+        }
+
         /*
         Carro meuCarro1 = new Carro("BMW");
         Carro meuCarro2 = new Carro("Fusca");
