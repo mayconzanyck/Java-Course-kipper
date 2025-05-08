@@ -7,3 +7,6 @@ public interface Carro {
     void freiar();
     void parar();
 }
+
+//POLIMORFISMO: permite que uma unica interface(metodo/classe) seja usada para representar diferentes tipos de açoes ou objetos
+//Obejtos que possuem o mesmo contrato porem tem comportamento diferente
