@@ -15,6 +15,9 @@ public class Main {
         meuCarro.acelerar();
         meuCarro2.acelerar();
 
+        SerVivo meuSer = new Humano();
+        meuSer.respirar();
+
         /*
         Carro meuCarro1 = new Carro("BMW");
         Carro meuCarro2 = new Carro("Fusca");
@@ -51,3 +54,5 @@ Default(Quando nao e definido modificador): Todo mundo que tiver no mesmo pacote
 Private: Só vao estar visiveis na classe que foi declarado
 Protected: Vai ser visivel dentro do mesmo arquivo, porem nao vai ser visivel para fora (dentro do mesmo pacote)
 */
+
+//HERANÇA: permite que uma subclasse possa herdar atributos de uma classe mãe
