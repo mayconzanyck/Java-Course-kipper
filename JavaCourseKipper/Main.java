@@ -9,17 +9,25 @@ public class Main {
     public static void main(String[] args) {
 
         //Cada um desses representa uma nova estancia da classe carro
-        Carro meuCarro = new Carro("Fusca");
+        Carro meuCarro = new Porsche();
+        Carro meuCarro2 = new BMW();
+
+        meuCarro.acelerar();
+        meuCarro2.acelerar();
+
+        /*
         Carro meuCarro1 = new Carro("BMW");
-        Carro meuCarro2 = new Carro("Porsche");
+        Carro meuCarro2 = new Carro("Fusca");
 
         //Chamando METODO
         meuCarro.acelerar();
         meuCarro1.acelerar();
         meuCarro2.acelerar();
+        */
     }
 }
 
+/*
 //CONSTRUTOR: atribuir variaveis(atributos) ao objeto
 class Carro{
 
@@ -34,6 +42,7 @@ class Carro{
         System.out.println("Acelerando o carro " + this.modelo);
     }
 }
+*/
 
 //MODIFICADORES DE ACESSO: controla a visibilidade das classes e metodos
 /*
